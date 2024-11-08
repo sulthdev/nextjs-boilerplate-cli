@@ -23,10 +23,11 @@ npm install -g nextjs-boilerplate-cli
 Enhance an existing Next.js project with a basic boilerplate structure:
 
 ```bash
-nextjs-boilerplate-cli add
+boilerplate-cli add
 ```
 
 **What it does:**
+
 - Creates a modular folder structure based on your router type (`App Router` or `Pages Router`).
 - Includes templates for:
   - Layout (`layout.tsx`) or `_app.tsx`
@@ -35,6 +36,7 @@ nextjs-boilerplate-cli add
   - Global constants (`constants.ts`)
 
 **Example Output:**
+
 ```plaintext
 src/
   components/ui
@@ -55,16 +57,18 @@ src/
 Add Redux Toolkit setup to your Next.js project:
 
 ```bash
-nextjs-boilerplate-cli add-redux
+boilerplate-cli add-redux
 ```
 
 **What it does:**
+
 - Sets up a Redux store with a default `generalSlice`.
 - Prompts you to add custom slices (optional).
 - Updates the store dynamically to include all reducers.
 - Outputs a helpful note for wrapping your app with the `Provider`.
 
 **Example Output:**
+
 ```plaintext
 src/
   store/
@@ -77,12 +81,17 @@ src/
 **Note:**  
 Don't forget to wrap your app with the `Provider`!
 
-_For App Router:_  
-```typescript
-import { Provider } from 'react-redux';
-import { store } from '../store';
+_For App Router:_
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+```typescript
+import { Provider } from "react-redux";
+import { store } from "../store";
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <body>
@@ -93,10 +102,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 }
 ```
 
-_For Pages Router:_  
+_For Pages Router:_
+
 ```typescript
-import { Provider } from 'react-redux';
-import { store } from '../store';
+import { Provider } from "react-redux";
+import { store } from "../store";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -116,15 +126,17 @@ export default MyApp;
 Add a new module with sub-routes:
 
 ```bash
-nextjs-boilerplate-cli add-module
+boilerplate-cli add-module
 ```
 
 **What it does:**
+
 - Prompts for the module name (e.g., `auth`, `dashboard`).
 - Auto-generates predefined templates for `auth` (e.g., `login` and `register`).
 - Allows you to define custom sub-routes for other modules.
 
 **Example Output for `auth`:**
+
 ```plaintext
 src/
   app/
