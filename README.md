@@ -1,4 +1,4 @@
-# 🚀 nextjs-boilerplate-cli
+# 🚀 nextjs-boilerplate-cli (beta)
 
 **A CLI tool to enhance and structure your TypeScript-based Next.js projects.**  
 📌 _Currently, this CLI only supports TypeScript Next.js projects._  
