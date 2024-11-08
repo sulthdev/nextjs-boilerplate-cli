@@ -6,12 +6,13 @@
 
 ---
 
-## 📦 Features
+## 📦 Installation
 
-- Automatic folder structure creation for both `App Router` and `Pages Router`.
-- Supports Redux Toolkit setup with customizable slices.
-- Flexible module creation with predefined templates (e.g., `auth` with `login` and `register`).
-- Installs required dependencies like `axios`, `react-redux`, and `@reduxjs/toolkit`.
+Install the CLI globally using `npm`:
+
+```bash
+npm install -g nextjs-boilerplate-cli
+```
 
 ---
 
@@ -136,34 +137,12 @@ src/
 
 ---
 
-## ⚙️ Installation
+## 📦 Features
 
-Install the CLI globally using `npm`:
-
-```bash
-npm install -g nextjs-boilerplate-cli
-```
-
----
-
-## 📄 Usage
-
-Navigate to your existing Next.js project directory and run the desired command:
-
-1. **Add Boilerplate**:  
-   ```bash
-   nextjs-boilerplate-cli add
-   ```
-
-2. **Add Redux Toolkit**:  
-   ```bash
-   nextjs-boilerplate-cli add-redux
-   ```
-
-3. **Add Module**:  
-   ```bash
-   nextjs-boilerplate-cli add-module
-   ```
+- Automatic folder structure creation for both `App Router` and `Pages Router`.
+- Supports Redux Toolkit setup with customizable slices.
+- Flexible module creation with predefined templates (e.g., `auth` with `login` and `register`).
+- Installs required dependencies like `axios`, `react-redux`, and `@reduxjs/toolkit`.
 
 ---
 
@@ -172,13 +151,6 @@ Navigate to your existing Next.js project directory and run the desired command:
 - Node.js >= 14
 - Next.js with TypeScript setup
 - Existing Next.js project directory (`package.json` must exist)
-
----
-
-## 📝 Notes
-
-- This CLI is specifically designed for **TypeScript Next.js projects**.
-- You may need to adjust the generated structure or files according to your specific requirements.
 
 ---
 
@@ -215,6 +187,13 @@ src/
 
 ---
 
+## 📝 Notes
+
+- This CLI is specifically designed for **TypeScript Next.js projects**.
+- You may need to adjust the generated structure or files according to your specific requirements.
+
+---
+
 ## 🌟 Contribution
 
 Feel free to fork and contribute to this project by opening a pull request.
@@ -224,3 +203,5 @@ Feel free to fork and contribute to this project by opening a pull request.
 ## 📧 Support
 
 If you encounter any issues or have suggestions, please [open an issue](https://github.com/sulthdev/nextjs-boilerplate-cli/issues).
+
+---
