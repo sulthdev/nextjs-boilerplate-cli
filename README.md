@@ -8,11 +8,82 @@
 
 ## 📦 Installation
 
-Install the CLI globally using `npm`:
+You can use `nextjs-boilerplate-cli` directly via `npx` or install it globally.
+
+### **Option 1: Quick Start with `npx` (Recommended)**
+
+Run the CLI directly using `npx` without any installation:
+
+```bash
+npx nextjs-boilerplate-cli
+```
+
+This ensures you always use the latest version of the CLI. No installation required!
+
+**Usage:**
+
+1. Navigate to your Next.js project directory:
+
+   ```bash
+   cd your-nextjs-project
+   ```
+
+2. Execute the CLI:
+
+   ```bash
+   npx nextjs-boilerplate-cli add
+   ```
+
+### **Option 2: Install Globally**
+
+If you prefer to install the CLI globally for repeated use:
 
 ```bash
 npm install -g nextjs-boilerplate-cli
 ```
+
+Once installed globally, you can run the CLI using:
+
+```bash
+nextjs-boilerplate add
+```
+
+**Note:**  
+If you've previously installed `nextjs-boilerplate-cli` globally and want to switch to using `npx`, you can uninstall the global version using:
+
+```bash
+npm uninstall -g nextjs-boilerplate-cli
+```
+
+---
+
+## 🚀 Quick Start
+
+Follow these steps to get started quickly:
+
+1. Navigate to your existing Next.js project:
+
+   ```bash
+   cd your-nextjs-project
+   ```
+
+2. Run the CLI:
+
+   - Using `npx`:
+
+     ```bash
+     npx nextjs-boilerplate-cli add
+     ```
+
+   - Or, if installed globally:
+
+     ```bash
+     nextjs-boilerplate add
+     ```
+
+3. Follow the interactive prompts.
+
+4. Start coding with the enhanced structure! 🚀
 
 ---
 
@@ -23,7 +94,9 @@ npm install -g nextjs-boilerplate-cli
 Enhance an existing Next.js project with a basic boilerplate structure:
 
 ```bash
-boilerplate-cli add
+npx nextjs-boilerplate-cli add
+# or, if installed globally
+nextjs-boilerplate add
 ```
 
 **What it does:**
@@ -57,7 +130,7 @@ src/
 Add Redux Toolkit setup to your Next.js project:
 
 ```bash
-boilerplate-cli add-redux
+npx nextjs-boilerplate-cli add-redux
 ```
 
 **What it does:**
@@ -126,7 +199,7 @@ export default MyApp;
 Add a new module with sub-routes:
 
 ```bash
-boilerplate-cli add-module
+npx nextjs-boilerplate-cli add-module
 ```
 
 **What it does:**
@@ -155,14 +228,6 @@ src/
 - Supports Redux Toolkit setup with customizable slices.
 - Flexible module creation with predefined templates (e.g., `auth` with `login` and `register`).
 - Installs required dependencies like `axios`, `react-redux`, and `@reduxjs/toolkit`.
-
----
-
-## 🔧 Requirements
-
-- Node.js >= 14
-- Next.js with TypeScript setup
-- Existing Next.js project directory (`package.json` must exist)
 
 ---
 
@@ -215,5 +280,3 @@ Feel free to fork and contribute to this project by opening a pull request.
 ## 📧 Support
 
 If you encounter any issues or have suggestions, please [open an issue](https://github.com/sulthdev/nextjs-boilerplate-cli/issues).
-
----
