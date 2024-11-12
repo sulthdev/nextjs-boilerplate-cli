@@ -199,8 +199,13 @@ export default MyApp;
 Add a new module with sub-routes:
 
 ```bash
-npx nextjs-boilerplate-cli add-module
+npx nextjs-boilerplate-cli add-module <moduleNames>
 ```
+
+**Options:**
+
+- `--with-api`: Generate API routes for the modules.
+- `--with-redux`: Generate Redux slices for the modules.
 
 **What it does:**
 
@@ -222,12 +227,81 @@ src/
 
 ---
 
+### 4. Add Environment Variables
+
+Manage environment variables for different environments:
+
+```bash
+npx nextjs-boilerplate-cli add-env
+```
+
+**What it does:**
+
+- Prompts to select or create an environment file (e.g., `.env`, `.env.production`).
+- Allows you to append or create environment variables dynamically.
+
+---
+
+### 5. Add Component
+
+Generate a modular React component:
+
+```bash
+npx nextjs-boilerplate-cli add-component --name <name> [--dir <dir>] [--with-tests]
+```
+
+**What it does:**
+
+- Creates a new React component in the specified or selected directory.
+- Optionally generates a CSS module and a test file.
+
+**Example Output:**
+
+```plaintext
+src/
+  components/
+    MyComponent/
+      MyComponent.tsx
+      MyComponent.module.css
+      MyComponent.test.tsx (optional)
+```
+
+---
+
+### 6. Add Tailwind CSS
+
+Set up Tailwind CSS for your Next.js project:
+
+```bash
+npx nextjs-boilerplate-cli add-tailwind
+```
+
+**What it does:**
+
+- Installs Tailwind CSS, PostCSS, and Autoprefixer.
+- Configures Tailwind CSS with the appropriate `content` paths.
+- Updates or creates `globals.css` with Tailwind directives.
+- Optionally installs `prettier-plugin-tailwindcss` for class sorting.
+
+**Example Output:**
+
+```plaintext
+src/
+  styles/
+    globals.css
+tailwind.config.js
+postcss.config.js
+```
+
+---
+
 ## 📦 Features
 
 - Automatic folder structure creation for both `App Router` and `Pages Router`.
 - Supports Redux Toolkit setup with customizable slices.
 - Flexible module creation with predefined templates (e.g., `auth` with `login` and `register`).
 - Installs required dependencies like `axios`, `react-redux`, and `@reduxjs/toolkit`.
+- Adds Tailwind CSS setup with optional Prettier plugin for class sorting.
 
 ---
 
